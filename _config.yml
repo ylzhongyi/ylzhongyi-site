@@ -1,0 +1,62 @@
+title: "中医博士杨琳"
+email: ylzhongyi@126.com
+description: "杨琳博士中医治疗痉挛性斜颈，分享中医故事。"
+baseurl: ""
+url: "http://www.ylzhongyi.com"
+#locale: en_US
+locale: zh_CN
+timezone: "Asia/Shanghai"
+twitter: "ylzhongyi"
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - vendor
+
+#fb_admins: https://facebook.com/vitorfs
+#fb_appid: 1645747765697865
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-time-to-read
+  - jekyll-archives
+
+paginate: 20
+paginate_path: "page:num"
+
+collections:
+  snippets:
+    output: true
+    permalink: /snippets/:title/
+  packages:
+    output: true
+    permalink: /packages/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "ylzhongyi"
+  - scope:
+      path: ""
+      type: "snippets"
+    values:
+      layout: "snippets"
+      author: "ylzhongyi"
+      gist_username: "ylzhongyi"
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+    - tags
+  layouts:
+    year: year_archive
+    month: month_archive
+    category: archive
+    tag: archive

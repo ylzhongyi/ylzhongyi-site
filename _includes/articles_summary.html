@@ -1,0 +1,12 @@
+<ul>
+  {% for post in include.posts %}
+    {% if post.url %}
+      <li style="line-height: 1.6; list-style: none">
+        <a style="text-decoration: none;" href="{{ post.url }}"><small style="margin-right: 5px"><i class="fa fa-sticky-note-o" aria-hidden="true"></i></small> {{ post.title }}</a>
+        <small style="color: #999;">
+          <span style="margin-right: 5px">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </small>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
