@@ -17,7 +17,7 @@ exclude:
 #fb_admins: https://facebook.com/vitorfs
 #fb_appid: 1645747765697865
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-time-to-read
